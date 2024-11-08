@@ -1,0 +1,25 @@
+section.main-section
+  .out-wrapper.main-section__out-wrapper
+    .wrapper
+      .main-section__container
+        h1.main-section__title.font-w-o-regular.font-s-50.text-up
+          | Откройте кондитерскую 
+          br.no-br
+          | с диетическими 
+          br.no-br
+          | десертами ПО ФРАНШИЗЕ 
+          br.no-br
+          span.color-violet «ВЕДЬМИНЫ СЕКРЕТЫ»
+        .main-section__sub-title.font-w-semi-bold.font-s-24
+          | и зарабатывайте от 75 000 рублей 
+          br
+          | чистой прибыли ежемесячно
+        .main-section__line
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Узнать условия
+          .main-section__agree-wrapper
+            include ../components/agree.pug
+        img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1576" height="1356" alt="image")

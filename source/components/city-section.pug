@@ -1,0 +1,19 @@
+section.city-section
+  .out-wrapper.city-section__out-wrapper
+    .wrapper
+      .city-section__container
+        h2.city-section__title.font-w-o-regular.font-s-50.text-up
+          span.color-violet Оставьте заявку
+        .city-section__sub-title.font-w-semi-bold.font-s-24
+          | чтобы узнать все условия работы 
+          br
+          | для новых франчайзи
+        .city-section__line
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Оставить заявку
+          .city-section__agree-wrapper
+            include ../components/agree.pug
+        img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1508" height="914" alt="image")

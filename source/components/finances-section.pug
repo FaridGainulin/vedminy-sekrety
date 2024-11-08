@@ -1,0 +1,55 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-bg(src="images/finances-section-img-bg.png" loading="lazy" width="564" height="544" alt="image")
+      h2.finances-section__title.font-w-o-regular.font-s-48.text-up
+        | Какую прибыль может 
+        br.no-br
+        | приносить 
+        span.color-violet одна кондитерская
+      .finances-section__sub-title.font-w-medium.font-s-22
+        | и другие важные цифры франшизы
+      .finances-section__box
+        .swiper-bullet
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .font-w-o-regular.font-s-36.color-violet.text-up 23 дня
+              .finances-section__card-line
+              .font-s-18 понадобится на запуск
+            .finances-section__card.swiper-slide
+              .font-w-o-regular.font-s-36.color-violet.text-up 16 месяцев
+              .finances-section__card-line
+              .font-s-18 средний срок <br> окупаемости
+            .finances-section__card.swiper-slide
+              .font-w-o-regular.font-s-36.color-violet.text-up 17,7%
+              .finances-section__card-line
+              .font-s-18 рентабельность <br> по чистой прибыли
+            .finances-section__card.swiper-slide
+              .font-w-o-regular.font-s-36.color-violet.text-up 100%
+              .finances-section__card-line
+              .font-s-18 средний размер <br> наценки на продукцию
+            .finances-section__card.swiper-slide
+              .font-w-o-regular.font-s-36.color-violet.text-up 420 000 рублей
+              .finances-section__card-line
+              .font-s-18 средний размер <br> ежемесячной выручки
+            .finances-section__card.swiper-slide
+              .font-w-o-regular.font-s-36.color-violet.text-up 75 000 рублей
+              .finances-section__card-line
+              .font-s-18 средний размер <br> ежемесячной прибыли
+          .bullet-pagination
+        img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="760" height="1100" alt="image")
+
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="414" height="418" alt="image")
+        .finances-section__bottom-title.font-w-bold.font-s-28
+          | Хотите получить детальные расчеты 
+          span.color-yellow под ваш бюджет?
+        .finances-section__bottom-text.font-s-18 Скачайте финансовую модель франшизы!
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
+      img.finances-section__img-cake(src="images/finances-section-img-cake.png" loading="lazy" width="430" height="358" alt="icon")
